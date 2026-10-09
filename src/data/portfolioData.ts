@@ -65,6 +65,7 @@ export const PERSONAL_INFO = {
   instagramHandle: '@zannitopp_',
   github: 'https://github.com/Zannito',
   linkedin: 'https://linkedin.com/in/zannitoprawoko',
+  cvUrl: '/Pandya_Zannito_Prawoko_CV.pdf',
   avatar: pandyaAvatar,
   summary:
     'Computer Science undergraduate at BINUS University passionate about Artificial Intelligence, Machine Learning, Computer Vision, and Data Science. Combining hands-on experience in machine learning programming projects with proven leadership in organizing and managing large-scale student programs. Skilled in software development, analytical thinking, and cross-functional collaboration, with a strong desire to leverage technology to create impactful and innovative solutions while continuously expanding technical and professional expertise.',
@@ -158,7 +159,7 @@ export const PROJECTS: ProjectItem[] = [
     image: drowsinessImg,
     metrics: '3-State Classification (Normal / Warning / Danger) · Grad-CAM Visual Heatmap',
     tags: ['Computer Vision', 'MobileNetV2', 'Grad-CAM', 'Facial Landmarks', 'EAR / MAR', 'Edge AI'],
-    demoUrl: null,
+    demoUrl: 'https://drowsiness-detection-with-mobilenetv2.onrender.com/',
     githubUrl: 'https://github.com/Zannito/Drowsiness-Detection-with-MobileNetV2',
     pitchDeckUrl: 'https://www.canva.com/design/DAHJDlWHAVs/YhVZwRj2Je3YVr7mopJ4Sg/edit',
     highlights: [

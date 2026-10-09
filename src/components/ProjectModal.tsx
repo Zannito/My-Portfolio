@@ -1,5 +1,5 @@
 import React from 'react';
-import { X, ExternalLink, Github, Presentation, CheckCircle, Calendar, UserCheck } from 'lucide-react';
+import { X, ExternalLink, Github, CheckCircle, Calendar, UserCheck } from 'lucide-react';
 import { ProjectItem } from '../data/portfolioData';
 
 interface ProjectModalProps {
@@ -36,20 +36,14 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
         {/* Modal Content Body */}
         <div className="p-6 overflow-y-auto space-y-6">
           
-          {/* Visual Showcase Banner */}
-          <div className="aspect-[16/9] w-full rounded-xl overflow-hidden bg-slate-100 border border-slate-200 relative">
-            <img 
-              src={project.image} 
-              alt={project.title}
-              referrerPolicy="no-referrer"
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent" />
-            <div className="absolute bottom-3 left-4 right-4">
-              <span className="text-xs font-mono text-emerald-300 bg-slate-950/80 px-2.5 py-1 rounded">
-                {project.metrics}
-              </span>
-            </div>
+          {/* Metadata Banner (No image as requested) */}
+          <div className="flex flex-wrap items-center justify-between gap-3 p-3.5 rounded-xl bg-slate-50 border border-slate-200/80">
+            <span className="font-semibold text-blue-600 bg-blue-50 px-2.5 py-1 rounded-md text-xs border border-blue-100">
+              {project.category}
+            </span>
+            <span className="text-xs font-mono text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-md border border-emerald-100">
+              {project.metrics}
+            </span>
           </div>
 
           {/* Title & Role */}
@@ -136,16 +130,6 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
             >
               <Github className="w-3.5 h-3.5 text-slate-600" />
               <span>GitHub Repo</span>
-            </a>
-
-            <a
-              href={project.pitchDeckUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 px-4 py-2 bg-white hover:bg-slate-100 text-slate-700 text-xs font-semibold rounded-lg transition-colors border border-slate-200"
-            >
-              <Presentation className="w-3.5 h-3.5 text-amber-500" />
-              <span>Pitch Deck</span>
             </a>
           </div>
 

@@ -12,17 +12,9 @@ export const ExperienceTimeline: React.FC = () => {
           {/* Left Column: Leadership & Work Experience */}
           <div className="lg:col-span-7 space-y-8">
             <div>
-              <div className="flex items-center gap-2 text-sm sm:text-base font-bold text-blue-600 uppercase tracking-wider mb-2">
-                <span>Organizational Leadership</span>
-                <span aria-hidden="true" className="text-slate-300">·</span>
-                <span>Campus Experience</span>
-              </div>
               <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight font-heading">
-                MT Al-Khawarizmi BINUS @Kemanggisan
+                EXPERIENCES
               </h2>
-              <p className="text-xs text-slate-600 mt-1">
-                Active leadership in financial administration, logistics operations, and public relations.
-              </p>
             </div>
 
             {/* Timeline Line */}
@@ -68,17 +60,9 @@ export const ExperienceTimeline: React.FC = () => {
           {/* Right Column: Formal Education */}
           <div className="lg:col-span-5 space-y-8">
             <div>
-              <div className="flex items-center gap-2 text-sm sm:text-base font-bold text-blue-600 uppercase tracking-wider mb-2">
-                <span>Formal Education</span>
-                <span aria-hidden="true" className="text-slate-300">·</span>
-                <span>Academic Record</span>
-              </div>
               <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight font-heading">
-                Academic Background
+                ACADEMIC BACKGROUND
               </h2>
-              <p className="text-xs text-slate-600 mt-1">
-                Foundations in computer science and mathematical sciences.
-              </p>
             </div>
 
             <div className="space-y-6">

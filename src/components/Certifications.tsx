@@ -8,18 +8,10 @@ export const Certifications: React.FC = () => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         
         {/* Section Header */}
-        <div className="max-w-2xl mb-12">
-          <div className="flex items-center gap-2 text-sm sm:text-base font-bold text-blue-600 uppercase tracking-wider mb-2">
-            <span>Achievements &amp; Honors</span>
-            <span aria-hidden="true" className="text-slate-300">·</span>
-            <span>Official Verification</span>
-          </div>
+        <div className="mb-10">
           <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight font-heading">
-            Certifications &amp; Competitions
+            CERTIFICATIONS &amp; AWARDS
           </h2>
-          <p className="text-sm text-slate-600 mt-2">
-            Official AI credentials from Microsoft and university-level competitive algorithmic programming.
-          </p>
         </div>
 
         {/* Certifications Grid */}
